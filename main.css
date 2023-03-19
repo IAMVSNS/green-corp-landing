@@ -69,8 +69,8 @@ header {
     top: 0;
     right: 0;
     height: 100%;
-    display: none;
-    visibility: hidden;
+    /* display: none; */
+    /* visibility: hidden; */
   }
 
   .about__info {
