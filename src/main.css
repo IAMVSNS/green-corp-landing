@@ -1,3 +1,5 @@
+/* TODO: Разбить этот огромный файл + форматирование */
+
 body {
     font-family: 'Raleway', sans-serif;
     color: #213053;
@@ -12,7 +14,7 @@ header {
     position: sticky;
     top:0px;
     background-color: white;
-    z-index: 1; 
+    z-index: 1;
   }
 
   .header__logo {
@@ -166,7 +168,7 @@ header {
   footer {
     padding: 90px 20px 90px 20px;
     font-size: 16px;
-    font-weight: 600px;
+    font-weight: 600;
   }
 
   .footer__container {
@@ -219,7 +221,7 @@ header {
   /* блок с преимуществами продукта */
   .features {
     background-color: #fff;
-    padding: 115px 60px; 
+    padding: 115px 60px;
 }
 
 @media (max-width: 720px) {
@@ -344,7 +346,7 @@ header {
     .features__feedback-left {
         margin-right: 0;
     }
-  
+
     .features__feedback-left h2, .features__box h3 {
         font-size: 36px;
     }
@@ -365,7 +367,7 @@ header {
 }
 
 .promo__image {
-  background-image: url(img/promo.jpg);
+  /*background-image: url(src/img/promo.jpg); TODO: нет такой картинки*/
   width: 50%;
   flex-shrink: 0;
   background-size: cover;
