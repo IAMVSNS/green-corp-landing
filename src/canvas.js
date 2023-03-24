@@ -76,7 +76,7 @@ class CanvasBackground {
    animate() {
        this.ctx.clearRect(0, 0, this.canvas.clientWidth, this.canvas.clientHeight);
         // Метод clearRect принимает на вход координаты левого
-        // верхнего угла прямоугольника (0,0) и ширину и высоту прямоугольника. 
+        // верхнего угла прямоугольника (0,0) и ширину и высоту прямоугольника.
 
         // Перемещение пузырьков, вычисление новой позиции
        this.bubblesList.forEach((bubble) => {

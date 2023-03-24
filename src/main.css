@@ -12,19 +12,21 @@ header {
     align-items: center;
     padding: 20px;
     position: sticky;
-    top:0px;
+    top:0;
     background-color: white;
     z-index: 1;
-  }
+}
+
+a {
+    text-decoration: none;
+    color: #213053;
+}
 
   .header__logo {
     height: 30px;
   }
 
-  a {
-    text-decoration: none;
-    color: #213053;
-  }
+
 
   header a {
     font-size: 15px;
@@ -66,7 +68,7 @@ header {
     position: relative;
   }
       /* Для тега canvas*/
-  .orb-canvas {
+ .orb-canvas {
     position: absolute;
     top: 0;
     right: 0;
@@ -105,7 +107,6 @@ header {
     color: #fff;
     padding-top: 115px;
     padding-bottom: 115px;
-    text-align: center;
   }
 
   .form h1 {
@@ -497,7 +498,6 @@ header {
     .cards {
       grid-template-columns: auto;
     }
-
   }
 
   /* Планшеты */

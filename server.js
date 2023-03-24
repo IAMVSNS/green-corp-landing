@@ -11,7 +11,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.post('/contact', (req, res) => {
-
     if (req.body) {
         fs.readFile('data.json', 'utf8', function readFileCallback(err, data) {
             if (err){
@@ -33,7 +32,6 @@ app.post('/contact', (req, res) => {
             JSON.stringify({ success: 'false', error: 'no data' })
         )
     }
-
 })
 
 app.listen(PORT, () => {
@@ -47,7 +45,7 @@ app.listen(PORT, () => {
 //     budget: '100000'
 // }
 //
-// let response = await fetch('http://localhost:3000/contact', {
+// fetch('http://localhost:3000/contact', {
 //     method: 'POST',
 //     headers: {
 //         'Content-Type': 'application/json;charset=utf-8'
