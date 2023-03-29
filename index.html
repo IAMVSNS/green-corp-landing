@@ -122,9 +122,9 @@
     <div class="form__container">
         <h1>Оставьте свои контакты</h1>
         <p>
-            <br>Поможем подобрать модель.</br>
+            <br>Поможем подобрать модель.</br> <!--TODO: Закрывающего тега br не бывает-->
             <br>Выбрать удобный вариант доставки и установки.</br>
-            <br>Гарантия возврата денег.</br>
+            <br>Гарантия возврата денег. </br>
         </p>
         <form>
             <div class="form__group">
@@ -149,7 +149,7 @@
                     <option value="100+">100 000₽</option>
                 </select>
             </div>
-            <button type="submit" class="form__submit">Отправить заявку</button>
+            <button type="button" class="form__submit">Отправить заявку</button>
         </form>
     </div>
 </section>
@@ -183,7 +183,8 @@
     <div class="footer__copyright">GreenCorp © 2021</div>
 </footer>
 
-<script src="./src/canvas.js"></script>
+<script type="module" src="./src/canvas.js"></script>
+<script type="module" src="./src/index.js"></script>
 
 </body>
 </html>
