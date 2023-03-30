@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-/* Шапка сайта */
+/* Шапка сайта 
 .head {
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,7 @@
     background-color: white;
     z-index: 1;
 }
+
 
 .header__logo {
     height: 30px;
@@ -29,6 +30,7 @@
     text-decoration: none;
     color: #213053;
 }
+*/
 
 /* От данного тэга зависят все кнопки, Как его поменять???*/
 button {
@@ -43,7 +45,7 @@ button {
     padding: 15px;
 }
 
-/* Раздел "Солнечные панели GreenRobotic"*/
+/* Раздел "Солнечные панели GreenRobotic" 
 .about {
     display: flex;
     justify-content: space-around;
@@ -55,7 +57,9 @@ button {
     background-size: cover;
     position: relative;
 }
-/* Для тега canvas*/
+*/
+
+/* Для тега canvas
 .orb-canvas {
     position: absolute;
     top: 0;
@@ -93,8 +97,9 @@ button {
 .about__solar-image {
     width: 500px;
 }
+*/
 
-/* 1-й раздел с преимуществами продукта */
+/* 1-й раздел с преимуществами продукта 
 .features {
     background-color: #fff;
     padding: 115px 60px;
@@ -154,8 +159,9 @@ button {
         grid-template-columns: auto;
     }
 }
+*/
 
-/* 2-й раздел с примуществами продукта */
+/* 2-й раздел с примуществами продукта 
 .features__border {
     width: 100%;
     border: 1px solid #E6EAF4;
@@ -240,8 +246,10 @@ button {
         margin-bottom: 30px;
     }
 }
+*/
 
-/* Раздел с ПРОМО */
+
+/* Раздел с ПРОМО 
 .promo {
     display: flex;
 }
@@ -321,8 +329,9 @@ button {
     font-size: 15px;
     margin-left: 5px;
 }
+*/
 
-/* Раздел для записи контактов */
+/* Раздел для записи контактов 
 .form {
     display: flex;
     justify-content: center;
@@ -345,6 +354,11 @@ button {
 
 .form__container {
     width: 550px;
+}
+
+.form_text {
+    line-height: 2;
+    font-size: 16px;
 }
 
 .form__group {
@@ -390,8 +404,9 @@ button:hover {
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
     transition: background-color 0.2s ease-in;
 }
+*/
 
-/* Подвал */
+/* Подвал 
 footer {
     padding: 90px 20px 90px 20px;
     font-size: 16px;
@@ -446,8 +461,9 @@ h3 {
     animation-timing-function: linear;
     position: absolute;
 }
+*/
 
-/* !!!! Мобильные устройства !!!! */
+/* !!!! Мобильные устройства !!!! 
 @media (max-width: 720px) {
     header {
         padding: 10px;
@@ -465,21 +481,27 @@ h3 {
         flex-direction: column-reverse;
         padding: 50px 10px;
     }
+    */
 
-    /* Размеры шрифта крупных заголовков */
+    /* Размеры шрифта крупных заголовков 
     .about h1 {
         font-size: 36px;
         line-height: 40px;
     }
-    /* Картинки солнечной батареи */
+    */
+
+    /* Картинки солнечной батареи 
     .about__solar-image {
         width: 280px;
     }
-    /* Картинка солнца */
+    */
+
+    /* Картинка солнца 
     .about__sun-image {
         width: 75px;
         height: 75px;
     }
+
 
     .form {
         padding: 50px 10px;
@@ -507,27 +529,33 @@ h3 {
     .cards {
         grid-template-columns: auto;
     }
-
 }
+    */
 
-/* Планшеты */
+/* Планшеты 
 @media (max-width: 1024px) {
     .about {
         padding: 115px 20px;
     }
+*/
 
-    /* Размеры шрифта заголовка первого блока */
+    /* Размеры шрифта заголовка первого блока 
     .about h1 {
         font-size: 36px;
         line-height: 40px;
     }
-    /* Ширина картинки солнечной батареи */
+    */
+
+    /* Ширина картинки солнечной батареи 
     .about__solar-image {
         width: 280px;
     }
-    /* Ширина и высота картинки солнышка */
+    */
+
+    /* Ширина и высота картинки солнышка 
     .about__sun-image {
         width: 75px;
         height: 75px;
     }
 }
+*/

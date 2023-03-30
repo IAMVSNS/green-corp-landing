@@ -1,0 +1,60 @@
+/* 1-й раздел с преимуществами продукта */
+.features {
+    background-color: #fff;
+    padding: 115px 60px;
+}
+
+@media (max-width: 720px) {
+    .features {
+        padding: 50px 10px;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    padding: 35px 40px 25px 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+}
+
+.card__text {
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.card__logo {
+    font-weight: 700;
+    font-size: 32px;
+    background: #eaeff9;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__logo.yellow {
+    color: #ffb406;
+}
+
+.card__logo.red {
+    color: #ad1714;
+}
+
+.card__logo.green {
+    color: #22a030;
+}
+
+@media (max-width: 720px) {
+    .cards {
+        grid-template-columns: auto;
+    }
+}

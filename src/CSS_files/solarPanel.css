@@ -1,0 +1,50 @@
+/* Раздел "Солнечные панели GreenRobotic"*/
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background: url('../img/back.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Для тега canvas*/
+.orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.about__info {
+    max-width: 550px;
+}
+
+.text-solar-panel {
+    font-size: 70px;
+    line-height: 76px;
+}
+
+.text_energy {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.about__button {
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.about__sun-image {
+    width: 100px;
+    height: 100px;
+}
+
+.about__solar-image {
+    width: 500px;
+}

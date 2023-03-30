@@ -1,0 +1,23 @@
+/* Шапка сайта */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 1;
+}
+
+.header__logo {
+    height: 30px;
+}
+
+.header_contact {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #213053;
+}
