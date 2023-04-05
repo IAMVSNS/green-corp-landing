@@ -9,6 +9,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    z-index: 1;
 }
 /* Для тега canvas*/
 .orb-canvas {
@@ -20,11 +21,16 @@
 
 .about__info {
     max-width: 550px;
+    z-index: 2;
 }
 
 .text-solar-panel {
     font-size: 70px;
     line-height: 76px;
+}
+
+.about__images {
+    z-index: 2;
 }
 
 .text_energy {
