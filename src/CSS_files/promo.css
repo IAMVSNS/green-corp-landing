@@ -1,0 +1,80 @@
+/* Раздел с ПРОМО */
+.promo {
+    display: flex;
+}
+
+.promo_image {
+    background-image: url('../img/promo.jpg');
+    width: 50%;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.image_promo {
+    width: 100%;
+    height: 100%;
+}
+
+.promo__right {
+    background: #dd5f26;
+    padding: 160px 60px;
+}
+
+@media (max-width: 720px) {
+    .promo {
+        flex-direction: column-reverse;
+    }
+
+    .promo__right {
+        padding: 50px 10px;
+    }
+
+    .promo_image {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.promo__text {
+    background-color: white;
+    padding: 30px 40px;
+    margin: 80px 1px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.promo__text p::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ec6b29;
+    margin-right: 10px;
+}
+
+.promo__text p {
+    opacity: 0.8;
+}
+
+.button_wrap {
+    background-color: #107b1c;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+    padding: 15px 30px;
+}
+
+.promo__button-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.fas .fa-chevron-right {
+    font-size: 15px;
+    margin-left: 5px;
+}

@@ -1,0 +1,85 @@
+/* 2-й раздел с примуществами продукта */
+.features__border {
+    width: 100%;
+    border: 1px solid #E6EAF4;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.features__feedback {
+    display: flex;
+}
+
+.features__feedback-left {
+    margin-right: 10px;
+    margin: 25px 20px 25px 40px;
+}
+
+.features__header-1 {
+    font-size: 48px;
+}
+
+.features__feedback-left p {
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 26px;
+}
+
+.features__feedback-right {
+    display: flex;
+    align-items: center;
+    margin: 25px 40px 25px 20px;
+}
+
+.features__box {
+    border-radius: 25px;
+    padding: 30px 40px 25px 40px;
+    color: white;
+}
+
+.features__savings-box {
+    background-color: #dc5e26;
+    box-shadow: 0 6px 0 rgb(221 95 38 / 20%);
+    margin-right: 40px;
+    height: 57%;
+}
+
+.features__box-2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.features__rate-box {
+    background-color: #1D263A;
+    box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
+}
+
+.stars {
+    color: #ff7039;
+}
+
+@media (max-width: 720px) {
+    .features__feedback {
+        flex-direction: column;
+    }
+
+    .features__feedback-left {
+        margin: 25px 20px 25px 40px;
+    }
+
+    .features__header-1, .features__box-2 {
+        font-size: 36px;
+    }
+
+    .features__feedback-right {
+        flex-direction: column;
+        align-items: initial;
+        margin: 25px 40px 25px 20px;
+    }
+
+    .features__savings-box {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

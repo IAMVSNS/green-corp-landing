@@ -3,7 +3,16 @@
 
 <head>
     <title>Солнечные батареи GreenCorp</title>
-    <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" href="src/main.css"/>
+    <link rel="stylesheet" href="src/CSS_files/header.css"/>
+    <link rel="stylesheet" href="src/CSS_files/solarPanel.css"/>
+    <link rel="stylesheet" href="src/CSS_files/firstPrivilege.css"/>
+    <link rel="stylesheet" href="src/CSS_files/secondPrivilege.css"/>
+    <link rel="stylesheet" href="src/CSS_files/promo.css"/>
+    <link rel="stylesheet" href="src/CSS_files/contactsPart.css"/>
+    <link rel="stylesheet" href="src/CSS_files/footer.css"/>
+    <link rel="stylesheet" href="src/CSS_files/planshetVersion.css"/>
+
     <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
             rel="stylesheet"/>
@@ -20,13 +29,15 @@
         <button class="booking" onclick="alert('Спасибо за заказ')"></a>Заказать</button>
     </div>
 </header>
+
+<!-- Раздел "Солнечные панели GreenRobotic"  -->
 <section class="about">
     <canvas class="orb-canvas" id="orb-canvas"></canvas>
     <div class="about__info">
         <div class="animate__slow">
             <h1 class="text-solar-panel">Солнечные панели GreenRobotic</h1>
             <p class="text_energy">Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-            <button class="about__button">Узнать подробнее<i class="fas fa-angle-right"></i></button>
+            <button class="about__button">Узнать подробнее <i class="fas fa-angle-right"></i></button>
         </div>
     </div>
     <div class="about__images">
@@ -37,6 +48,7 @@
     </div>
 </section>
 
+<!-- 1-й раздел с преимуществами продукта -->
 <section class="features" id="features">
     <div class="cards">
         <div class="card">
@@ -65,6 +77,7 @@
         </div>
     </div>
 
+<!-- 2-й раздел с преимуществами продукта -->
     <div class="features__border">
         <div class="features__feedback">
             <div class="features__feedback-left">
@@ -102,6 +115,7 @@
     </div>
 </section>
 
+<!-- Раздел с ПРОМО -->
 <section class="promo">
     <div class="promo__image">
         <img class="image_promo" src="src/img/promo.jpg">
@@ -118,14 +132,15 @@
     </div>
 </section>
 
+<!-- Раздел для записи контактов -->
 <section class="form">
     <div class="form__container">
         <h1>Оставьте свои контакты</h1>
-        <p>
-            <br>Поможем подобрать модель.</br> <!--TODO: Закрывающего тега br не бывает-->
-            <br>Выбрать удобный вариант доставки и установки.</br>
-            <br>Гарантия возврата денег. </br>
-        </p>
+        <div class="form_text">
+            <div>Поможем подобрать модель.</div>
+            <div>Выбрать удобный вариант доставки и установки.</div>
+            <div>Гарантия возврата денег.</div>
+        </div>
         <form>
             <div class="form__group">
                 <label for="name">Ваше имя</label>
@@ -154,6 +169,7 @@
     </div>
 </section>
 
+<!-- Подвал -->
 <footer>
     <div class="footer__container">
         <div class="footer__group">

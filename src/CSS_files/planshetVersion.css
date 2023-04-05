@@ -1,0 +1,21 @@
+/* Планшеты */
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+
+    /* Размеры шрифта заголовка первого блока */
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    /* Ширина картинки солнечной батареи */
+    .about__solar-image {
+        width: 280px;
+    }
+    /* Ширина и высота картинки солнышка */
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+}
