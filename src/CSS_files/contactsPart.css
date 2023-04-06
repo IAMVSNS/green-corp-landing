@@ -10,13 +10,8 @@
     text-align: center;
 }
 
-.form h1 {
+.form_title {
     font-size: 48px;
-}
-
-.form p {
-    font-size: 18px;
-    opacity: 0.65;
 }
 
 .form__container {
@@ -34,19 +29,19 @@
     text-align: left;
 }
 
-.form form {
+.client_data {
     margin-top: 60px;
     display: grid;
     grid-gap: 20px;
 }
 
-.form label {
+.form_data {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.form input, select {
+.form_input, .form_budget {
     font-size: 18px;
     color: #213053;
     height: 60px;
@@ -62,7 +57,7 @@
     margin-top: 40px;
 }
 
-select {
+.form_budget {
     appearance: none;
 }
 
