@@ -11,7 +11,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.post('/contact', (req, res) => {
-
     if (req.body) {
         fs.readFile('data.json', 'utf8', function readFileCallback(err, data) {
             if (err){

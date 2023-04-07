@@ -24,3 +24,14 @@ const sendData = () => {
 
 const submitButton = document.querySelector('.form__submit')
 submitButton.addEventListener('click', sendData)
+
+
+const bookingButton = document.querySelector('.booking')
+bookingButton.addEventListener('click', () => {
+    const display = document.querySelector('.popup').style.display
+    if (display === 'none') {
+        document.querySelector('.popup').style.display = 'block'
+    } else {
+        document.querySelector('.popup').style.display = 'none'
+    }
+})

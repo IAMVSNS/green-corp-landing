@@ -16,3 +16,15 @@ button {
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
 }
+
+.popup {
+    width: 400px;
+    height: 300px;
+    background: lightgreen;
+    position: fixed;
+    z-index: 100;
+    top: 200px;
+    left: calc(50% - 200px);
+    border-radius: 20px;
+    display: none;
+}
