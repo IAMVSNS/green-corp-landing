@@ -1,0 +1,124 @@
+.popup {
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    top: 200px;
+    background: rgb(255, 255, 255);
+    z-index: 3;
+    left: calc(50% - 200px);
+    border-radius: 20px;
+    display: none;
+}
+
+.popup.active {
+    display: block;
+}
+
+/* 
+.pop_up_container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+} */
+
+.pop_up_body {
+    margin: auto;
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #D9E4E6;
+}
+
+.pop_up_text {
+    font-size: 40px;
+    font-family: 'Raleway' sans-serif;
+    font-weight: 600;
+    color: #1b1e22;
+    margin: 40px 25px 40px 25px;
+}
+
+.pop_up_input {
+    display: block;
+    margin: 30px;
+    width: 300px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #89909f;
+    border: 1px solid #D9E4E6;
+}
+
+/* Убираем рамку */
+.pop_up_input:focus {
+    outline: none;
+}
+
+#pop_up_button {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    width: 340px;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Пульсация Попап */
+.popup:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-20deg, #f89b29 100%, #ff0f7b 0%);
+    transform: translate3d(0px, 20px, 0) scale(1.2);
+    filter: blur(200px);
+    /* opacity: var(0.1); */
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    animation: blobby 5s infinite ease;
+}
+
+.popup:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+@keyframes blobby {
+    0% {
+    transform: translate3d(-100px, 20px, 0) scale(1.2);
+    }
+    20% {
+    transform: translate3d(0px, 10px, 0) scale(0.9) rotate(5deg);
+    }
+    50% {
+    transform: translate3d(0px, 20px, 0) scale(1) rotate(0deg);
+    }
+    70% {
+    transform: translate3d(0px, 10px, 0) scale(1.4) rotate(5deg);
+    }
+    0% {
+    transform: translate3d(0px, 20px, 0) scale(1.2);
+    }
+}
