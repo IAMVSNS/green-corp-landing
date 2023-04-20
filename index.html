@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="src/CSS_files/contactsPart.css"/>
     <link rel="stylesheet" href="src/CSS_files/footer.css"/>
     <link rel="stylesheet" href="src/CSS_files/planshetVersion.css"/>
+    <link rel="stylesheet" href="src/CSS_files/popup.css"/>
 
-    <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
-            rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
@@ -26,9 +26,21 @@
     <img class="header__logo" src="src/img/logo.svg">
     <div class="header__controls">
         <a class="header_contact" href="#contacts">Контакты</a>
-        <button class="booking" onclick="alert('Спасибо за заказ')"></a>Заказать</button>
+        <button class="booking" id="consultation"></a>Консультация</button>
     </div>
 </header>
+
+<div class="popup" id="pop_up">
+        <div class="pop_up_body" id="pop_up_body">
+            <p class="pop_up_text">Консультация со специалистом</p>
+                <form>
+                    <input class="pop_up_input" type="text" placeholder="Имя">
+                    <input class="pop_up_input" type="text" placeholder="Телефон">
+                    <button class="booking" id="pop_up_button"></a>Заказать</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+        </div>
+</div>
 
 <!-- Раздел "Солнечные панели GreenRobotic"  -->
 <section class="about">
@@ -144,15 +156,15 @@
         <form class="client_data">
             <div class="form__group">
                 <label class="form_data" for="name">Ваше имя</label>
-                <input class="form_input" type="text" placeholder="Введите имя" id="name">
+                <input class="form_name" type="text" placeholder="Введите имя" id="name">
             </div>
             <div class="form__group">
                 <label class="form_data" for="email">Электронный адрес</label>
-                <input class="form_input" type="email" placeholder="***@ya.ru" id="email">
+                <input class="form_email" type="email" placeholder="Email" id="email">
             </div>
             <div class="form__group">
                 <label class="form_data" for="phone">Номер телефона</label>
-                <input class="form_input" type="tel" placeholder="7 (999) 999-99-99" id="phone">
+                <input class="form_phone" type="tel" placeholder="7 (999) 999-99-99" id="phone">
             </div>
             <div class="form__group">
                 <label class="form_data" for="budget">Примерный бюджет</label>
@@ -201,6 +213,7 @@
 
 <script type="module" src="./src/canvas.js"></script>
 <script type="module" src="./src/index.js"></script>
+<script type="module" src="./src/popup.js"></script>
 
 </body>
 </html>

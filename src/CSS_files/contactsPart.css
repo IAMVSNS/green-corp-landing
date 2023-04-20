@@ -41,7 +41,7 @@
     margin-bottom: 20px;
 }
 
-.form_input, .form_budget {
+.form_name, .form_email, .form_phone, .form_budget {
     font-size: 18px;
     color: #213053;
     height: 60px;
