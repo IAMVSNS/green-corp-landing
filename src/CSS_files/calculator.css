@@ -1,0 +1,86 @@
+.calculator {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 50px;
+}
+
+.form_culculator_left {
+    padding: 25px 35px 25px 35px;
+    background: #FFFFFF;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.panel_select {
+    font-size: 18px;
+    color: #213053;
+    height: 60px;
+    outline: none;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    border: none;
+    appearance: none;
+    border: 1px solid #D9E4E6;
+}
+
+.panels__quantity {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.panels__square {
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+
+.panels__quantity-text {
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+
+.form_culculator_center {
+    padding: 25px 40px 25px 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+}
+
+.calculator_params {
+    height: 140px;
+}
+
+.option__item {
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+
+.form_culculator_right {
+    padding: 25px 40px 25px 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+}
+
+.form__item_3 {
+    display: flex;
+    grid-gap: 40px;
+    margin-top: 10px;
+}
+
+.order {
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.total {
+    font-size: 21px;
+    margin-top: 20px;
+
+}

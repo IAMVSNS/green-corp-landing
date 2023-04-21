@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="src/CSS_files/footer.css"/>
     <link rel="stylesheet" href="src/CSS_files/planshetVersion.css"/>
     <link rel="stylesheet" href="src/CSS_files/popup.css"/>
+    <link rel="stylesheet" href="src/CSS_files/calculator.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
         rel="stylesheet"/>
@@ -138,11 +139,110 @@
             <p>Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна.</p>
             <p>Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии.</p>
             <div class="promo__button-wrap">
-                <button type="button">Заказать <i class="fas fa-chevron-right"></i></button>
+                <button class="booking" type="button">Консультация <i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Калькулятор -->
+<section class="calculator">
+    <div class="form_culculator_left">
+        <div class="title">
+            <h2 class="heading">Выберите солнечную панель</h2>
+            <select class="panel_select">
+                <option>Выберите вариант</option>
+                <option value="5483">Солнечная батарея SilaSolar SIM200 200Вт ( 5BB )</option>
+                <option value="5484">Солнечная батарея SilaSolar SIM250 250Вт ( 5BB )</option>
+                <option value="5582">Солнечная панель Einnova Solarline ESM-340S PERC</option>
+                <option value="6199">Двусторонняя солнечная панель Einnova Solarline ESM-550S PERC</option>
+                <option value="6379">Солнечная батарея Jinko Solar 530Вт (Bifacial)</option>
+                <option value="7905">Солнечная панель SilaSolar 550/690Вт (Bifacial)</option>
+            </select>
+        </div>
+
+        <h2 class="heading">Укажите количество СБ</h2>
+        <div class="panels__quantity">
+            <div class="panels__quantity-input">
+                    <!-- <input type="number" min="1" value="1"> -->
+                    <select class="panel_select panel_number">
+                        <option value="0">Выберите количество</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+            </div>
+                <div class="panels__square">
+                    = 
+                    <span class="square_number">1.27 </span>
+                    м
+                    <sup> 2</sup>
+                </div>
+                <div class="panels__quantity-text"> составляет площадь покрытия</div>
+        </div>
+    </div>
+
+    <div class="form_culculator_center">
+        <div class="container_calculator">
+        <form action="#" class="form_params">
+            <div class="form__item">
+                <h2 class="heading">Дополнительные параметры</h2>
+                <div class="calculator_params">
+                    <div class="option__item">
+                        <input type="checkbox" name="option1" id="option1" class="option"/>
+                        <label for="option1" class="checkmark"></label>
+                        <label for="option1">Доставка по Москве</label>
+                    </div>
+
+                    <div class="option__item">
+                        <input type="checkbox" name="option2" id="option2" class="option"/>
+                        <label for="option2" class="checkmark"></label>
+                        <label for="option2">Доставка в Московскую область</label>
+                    </div>
+
+                    <div class="option__item">
+                        <input type="checkbox" name="option4" id="option4" class="option"/>
+                        <label for="option4" class="checkmark"></label>
+                        <label for="option4">Страховка</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <div class="form_culculator_right">
+        <div class="container_calculator">
+        <form action="#" class="form_order">
+            <div class="form__item">
+                <h2 class="heading">Ваш заказ</h2>
+                    <div class="order">
+                        <span> Стоимость СБ : </span>
+                        <output id="order_time">—</output>
+                    </div>
+
+                <div class="order">
+                    <span>Стоимость услуг :</span>
+                    <output id="order_option">—</output>
+                </div>
+            </div>
+                
+            <div class="form__item_3">
+                <h2 class="heading">Итоговая стоимость равна - </h2>
+                <output class="total" id="total">0₽</output>
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+
 
 <!-- Раздел для записи контактов -->
 <section class="form">
@@ -173,7 +273,7 @@
                     <option value="10 - 30">10 000₽ - 30 000₽</option>
                     <option value="30 - 60">30 000₽ - 60 000₽</option>
                     <option value="60 - 100">60 000₽ - 100 000₽</option>
-                    <option value="100+">100 000₽</option>
+                    <option value="100+">100 000₽ и более</option>
                 </select>
             </div>
             <button type="button" class="form__submit">Отправить заявку</button>
@@ -214,6 +314,7 @@
 <script type="module" src="./src/canvas.js"></script>
 <script type="module" src="./src/index.js"></script>
 <script type="module" src="./src/popup.js"></script>
+<script type="module" src="./src/calculator.js"></script>
 
 </body>
 </html>
