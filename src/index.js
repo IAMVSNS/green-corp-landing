@@ -13,7 +13,18 @@ const sendData = () => {
         budget: budget
     }
 
-        if (name !== "" && email !== '' && phone !== '' && budget !== 'Выберите вариант') {
+    // var isValid = function(name) {
+    //     return s && s.split(" ").length === 3 && /^[\u0410-\u04FF]+$/.test(s);
+    // };
+
+    var stringRegexp = /^[а-яА-ЯёË-]{2,30}$/
+    var emailRegexp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i
+    
+    console.log(stringRegexp.test(name))
+
+
+        if (name !== "" && stringRegexp.test(name) && email !== ''&& emailRegexp.test(email) && phone !== '' && budget !== 'Выберите вариант') {
+            
             let response = fetch('http://localhost:3000/contact', {
                 method: 'POST',
                 headers: {
