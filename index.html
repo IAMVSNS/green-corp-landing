@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <meta charset="utf-8">
     <title>Солнечные батареи GreenCorp</title>
     <link rel="stylesheet" href="src/main.css"/>
     <link rel="stylesheet" href="src/CSS_files/header.css"/>
@@ -147,70 +148,95 @@
 
 <!-- Калькулятор -->
 <section class="calculator">
-    <div class="form_culculator_left">
+    <div class="form_calculator_left">
         <div class="title">
             <h2 class="heading">Выберите солнечную панель</h2>
             <select class="panel_select">
-                <option>Выберите вариант</option>
+                <option value="0">Выберите вид СБ</option>
                 <option value="5483">Солнечная батарея SilaSolar SIM200 200Вт ( 5BB )</option>
-                <option value="5484">Солнечная батарея SilaSolar SIM250 250Вт ( 5BB )</option>
+                <option value="5884">Солнечная батарея SilaSolar SIM250 250Вт ( 5BB )</option>
+                <option value="6385">Солнечная батарея SilaSolar SIM-280 280Вт ( 5BB )</option>
+                <option value="6880">Солнечная батарея SilaSolar SIM330 330Вт PERC ( 5BB )</option>
+                <option value="6950">Солнечная батарея SilaSolar SIM-370 370Вт PERC ( 5BB )</option>
+                <option value="7100">Солнечная батарея SilaSolar SIM-400 400Вт PERC ( 5BB )</option>
+                <option value="7500">Солнечная батарея SilaSolar SIM-400 400Вт PERC (Twin Power)</option>
+                <option value="7850">Солнечная батарея SilaSolar 450Вт SIM450 PERC (Twin Power)</option>
                 <option value="5582">Солнечная панель Einnova Solarline ESM-340S PERC</option>
-                <option value="6199">Двусторонняя солнечная панель Einnova Solarline ESM-550S PERC</option>
-                <option value="6379">Солнечная батарея Jinko Solar 530Вт (Bifacial)</option>
+                <option value="5889">Солнечная панель Einnova Solarline ESM-450S PERC</option>
+                <option value="6294">Солнечная панель Einnova Solarline ESM-500S PERC</option>
+                <option value="6598">Солнечная панель Einnova Solarline ESM-550S PERC</option>
+                <option value="9199">Двусторонняя солнечная панель Einnova Solarline ESM-550S PERC</option>
+                <option value="6332">Солнечная батарея Jinko Solar 560Вт (Bifacial)</option>
+                <option value="6534">Солнечная батарея Jinko Solar Tiger Pro JKM445M-60HL4</option>
+                <option value="6940">Солнечная батарея Jinko Solar Tiger Pro JKM450M-60HL4</option>
+                <option value="7244">Солнечная батарея Jinko Tiger Bifacial JKM460M-7RL3-TV</option>
+                <option value="7579">Солнечная батарея Jinko Solar 530Вт (Bifacial)</option>
+                <option value="7690">Солнечная батарея SilaSolar 410Вт (TP)</option>
+                <option value="6690">Солнечная батарея SilaSolar 190Вт </option>
+                <option value="7883">Солнечная панель 460M HALF-CELL ODA460-36V-MH</option>
                 <option value="7905">Солнечная панель SilaSolar 550/690Вт (Bifacial)</option>
             </select>
         </div>
 
-        <h2 class="heading">Укажите количество СБ</h2>
         <div class="panels__quantity">
-            <div class="panels__quantity-input">
-                    <!-- <input type="number" min="1" value="1"> -->
-                    <select class="panel_select panel_number">
-                        <option value="0">Выберите количество</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-            </div>
-                <div class="panels__square">
-                    = 
-                    <span class="square_number">1.27 </span>
-                    м
-                    <sup> 2</sup>
+            <h2 class="heading" id="countPanel" >Укажите количество СБ</h2>
+            <div class="count_panel_center">
+                <div class="panels__quantity-input">
+                        <select class="panel_number">
+                            <option value="0">Выберите количество</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                 </div>
-                <div class="panels__quantity-text"> составляет площадь покрытия</div>
+                    <div class="panels__square">
+                        <p> = <span class="square_number">1.27</span> м <sup>2</sup> </p>
+                    </div>
+                    <p class="panels__quantity-text"> составляет площадь покрытия</p>
+            </div>
         </div>
     </div>
 
-    <div class="form_culculator_center">
+    <div class="form_calculator_center">
         <div class="container_calculator">
         <form action="#" class="form_params">
             <div class="form__item">
                 <h2 class="heading">Дополнительные параметры</h2>
                 <div class="calculator_params">
+
                     <div class="option__item">
-                        <input type="checkbox" name="option1" id="option1" class="option"/>
-                        <label for="option1" class="checkmark"></label>
+                        <input type="radio" id="option4" class="option4" name ="rb1" value="0" checked>
+                        <label for="option4">Самовывоз</label>
+                    </div>
+
+                    <div class="option__item">
+                        <input type="radio" id="option1" class="option1" name ="rb1" value="2500">
                         <label for="option1">Доставка по Москве</label>
                     </div>
 
                     <div class="option__item">
-                        <input type="checkbox" name="option2" id="option2" class="option"/>
-                        <label for="option2" class="checkmark"></label>
+                        <input type="radio" id="option2" class="option2" name ="rb1" value="4500">
                         <label for="option2">Доставка в Московскую область</label>
                     </div>
-
                     <div class="option__item">
-                        <input type="checkbox" name="option4" id="option4" class="option"/>
-                        <label for="option4" class="checkmark"></label>
-                        <label for="option4">Страховка</label>
+
+                        <div class="insurance">
+                            <label class="toggler-wrapper style-2">
+                                <input type="checkbox" id="option3" class="option3" value="15000">
+                                <div class="toggler-slider">
+                                    <div class="toggler-knob"></div>
+                                </div>
+                            </label>
+                            <label for="option3">Страховка</label>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -218,25 +244,25 @@
         </div>
     </div>
 
-    <div class="form_culculator_right">
+    <div class="form_calculator_right">
         <div class="container_calculator">
         <form action="#" class="form_order">
             <div class="form__item">
                 <h2 class="heading">Ваш заказ</h2>
                     <div class="order">
-                        <span> Стоимость СБ : </span>
-                        <output id="order_time">—</output>
+                        <span>Стоимость СБ : </span>
+                        <output id="order_time"> 0</output><p>₽</p>
                     </div>
 
                 <div class="order">
                     <span>Стоимость услуг :</span>
-                    <output id="order_option">—</output>
+                    <output id="order_option">0</output><p>₽</p>
                 </div>
             </div>
                 
-            <div class="form__item_3">
-                <h2 class="heading">Итоговая стоимость равна - </h2>
-                <output class="total" id="total">0₽</output>
+            <div class="form__item_2">
+                <h2 class="heading">Итоговая стоимость равна :</h2>
+                <output class="total" id="total">0</output><p>₽</p>
             </div>
         </form>
         </div>
@@ -255,8 +281,8 @@
         </div>
         <form class="client_data">
             <div class="form__group">
-                <label class="form_data" for="name">Ваше имя</label>
-                <input class="form_name" type="text" placeholder="Введите имя" id="name">
+                <label class="form_data" for="name">ФИО</label>
+                <input class="form_name" type="text" placeholder="Введите ФИО" id="name">
             </div>
             <div class="form__group">
                 <label class="form_data" for="email">Электронный адрес</label>
