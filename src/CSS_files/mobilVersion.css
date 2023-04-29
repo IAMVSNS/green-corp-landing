@@ -48,7 +48,7 @@
         flex-direction: column;
     }
 
-    .features {
+    .features .calculator {
         margin-top: 50px;
         margin-bottom: 50px;
         margin-right: 10px;
@@ -58,4 +58,5 @@
     .cards {
         grid-template-columns: auto;
     }
+
 }
