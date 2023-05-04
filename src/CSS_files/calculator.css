@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
 .calculator {
-    display: grid;
-    grid-gap: 50px;
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    flex-direction : row;
+    justify-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
     padding: 115px 60px;
 }
 
@@ -27,6 +32,7 @@
 }
 
 .form_calculator_left {
+    flex : 1 1 20em;
     padding: 35px 40px 25px 40px;
     background: #FFFFFF;
     border: 1px solid #D9E4E6;
@@ -35,9 +41,11 @@
 }
 
 .panel_select {
-    font-size: 18px;
+    flex-wrap: wrap;
+    font-size: 16px;
     color: #213053;
     height: 60px;
+    width: 555px;
     outline: none;
     padding: 0 10px 0 10px;
     border-radius: 15px;
@@ -54,7 +62,7 @@
 }
 
 .panel_number {
-    font-size: 18px;
+    font-size: 16px;
     color: #213053;
     height: 60px;
     outline: none;
@@ -78,10 +86,12 @@
 }
 
 .form_calculator_center {
+    flex : 1 1 20em;
     padding: 35px 40px 25px 40px;
     background: #FFFFFF;
     border: 1px solid #D9E4E6;
     border-radius: 5px;
+    align-items: center;
 }
 
 .calculator_params {
@@ -185,6 +195,7 @@ Effects Checkbox Style
 
 
 .form_calculator_right {
+    flex : 1 1 20em;
     padding: 35px 40px 25px 40px;
     background: #FFFFFF;
     border: 1px solid #D9E4E6;
@@ -207,4 +218,5 @@ Effects Checkbox Style
 .total {
     font-size: 21px;
     grid-gap: 10px;
+    font-size: 21px;
 }
