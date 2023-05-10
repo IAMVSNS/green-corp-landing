@@ -13,9 +13,8 @@ const sendData = () => {
         budget: budget
     }
 
-    // var isValid = function(name) {
-    //     return s && s.split(" ").length === 3 && /^[\u0410-\u04FF]+$/.test(s);
-    // };
+    localStorage.setItem('person', name)
+
 
     var stringRegexp = /^[а-яА-ЯёË-]{2,30}$/
     var emailRegexp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i
