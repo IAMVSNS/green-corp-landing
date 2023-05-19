@@ -35,13 +35,29 @@ const sendData = () => {
                     },
                 body: JSON.stringify(user)
             }).then(response => {
+
+                let messageStatus = document.querySelector('.message_status')
+                messageStatus.innerHTML = "Заявка отправлена"
+                messageStatus.style.color = "yellow"
+                messageStatus.style.display = "block";
+
+                setTimeout( () => messageStatus.style.display = "none", 5000)
+
                 return response.json()  // json возвращает промис
+
             })
     console.log('send data')
+
+        } else {
+            let messageStatus = document.querySelector('.message_status')
+            messageStatus.innerHTML = "Заявка не отправлена. Проверьте введенные значенния"
+            messageStatus.style.color = "red"
+            messageStatus.style.display = "block";
+            setTimeout( () => messageStatus.style.display = "none", 5000)
         }
     console.log(user)
-
 }
 
 const submitButton = document.querySelector('.form__submit')
 submitButton.addEventListener('click', sendData)
+
