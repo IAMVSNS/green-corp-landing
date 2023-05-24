@@ -14,13 +14,6 @@
     display: block;
 }
 
-/* 
-.pop_up_container {
-    display: flex;
-    width: 400px;
-    height: 400px;
-} */
-
 .pop_up_body {
     margin: auto;
     width: 400px;

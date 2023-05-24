@@ -18,18 +18,3 @@ closePopupButton.addEventListener('click',() => { // Вешаем обработ
     popupBg.classList.remove('active'); // Убираем активный класс с фона
     popup.classList.remove('active'); // И с окна
 });
-
-
-// document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-//     console.log(e.target)
-//     const popupBackGround = e.composedPath().includes(popup)
-
-//     console.log('popupBackGround', popupBackGround)
-
-//     // console.log('class - ', popupBg.classList.contains('active'))
-
-//     if(!popupBackGround) { // Если цель клика - фот, то:
-//         popupBg.classList.remove('active'); // Убираем активный класс с фона
-//         popup.classList.remove('active'); // И с окна
-//     }
-// })
