@@ -36,9 +36,9 @@ const sendData = () => {
                 body: JSON.stringify(user)
             }).then(response => {
 
-                let messageStatus = document.querySelector('.message_status')
+                let messageStatus = document.querySelector('#message_status')
                 messageStatus.innerHTML = "Заявка отправлена"
-                messageStatus.style.color = "yellow"
+                messageStatus.style.color = "black"
                 messageStatus.style.display = "block";
 
                 setTimeout( () => messageStatus.style.display = "none", 5000)
@@ -50,8 +50,8 @@ const sendData = () => {
 
         } else {
             let messageStatus = document.querySelector('.message_status')
-            messageStatus.innerHTML = "Заявка не отправлена. Проверьте введенные значенния"
-            messageStatus.style.color = "red"
+            messageStatus.innerHTML = "Заявка не отправлена. Проверьте введенные значения"
+            messageStatus.style.color = "black"
             messageStatus.style.display = "block";
             setTimeout( () => messageStatus.style.display = "none", 5000)
         }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="src/CSS_files/planshetVersion.css"/>
     <link rel="stylesheet" href="src/CSS_files/popup.css"/>
     <link rel="stylesheet" href="src/CSS_files/calculator.css"/>
+    <link rel="stylesheet" href="src/CSS_files/timer.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
         rel="stylesheet"/>
@@ -65,6 +66,36 @@
         </div>
     </div>
 </section>
+
+<!-- Раздел Timer  -->
+<section class="timer">
+    <h1 class="timer_header">Скидка 25%</h1>
+
+        <div class="timer_container">
+
+            <div class="timer_days">
+                <p class="timer-text" id="days">0</p>
+                <span class="timer_value">Дни</span>
+            </div>
+
+            <div class="timer_hours">
+                <p class="timer-text" id="hours">0</p>
+                <span class="timer_value">Часы</span>
+            </div>
+
+            <div class="timer_minutes">
+                <p class="timer-text" id="minutes">0</p>
+                <span class="timer_value">Минуты</span>
+            </div>
+
+            <div class="timer_seconds">
+                <p class="timer-text" id="seconds">0</p>
+                <span class="timer_value">Секунды</span>
+            </div>
+
+        </div>
+</section>
+
 
 <!-- 1-й раздел с преимуществами продукта -->
 <section class="features" id="features">
@@ -307,7 +338,7 @@
                     <option value="100+">100 000₽ и более</option>
                 </select>
             </div>
-            <span class="message_status"></span>
+            <span class="message_status" id="message_status"></span>
             <button type="button" class="form__submit">Отправить заявку</button>
         </form>
     </div>
@@ -348,6 +379,7 @@
 <script type="module" src="./src/popup.js"></script>
 <script type="module" src="./src/calculator.js"></script>
 <script type="module" src="./src/name.js"></script>
+<script type="module" src="./src/timer.js"></script>
 
 </body>
 </html>
