@@ -67,11 +67,13 @@ button:hover {
     transition: background-color 0.2s ease-in;
 }
 
-#message_status {
+.message_status_success {
     display: none;
     margin-top: 40px;
     padding: 20px;
     border: none;
+    border-radius: 15px;
+    font-weight: 700;
     justify-content: space-around;
     background-color: rgb(255, 238, 3);
 	animation: pulse 1.25s infinite;
@@ -94,7 +96,7 @@ button:hover {
 	}
 }
 
-.message_status {
+.message_status_error {
     display: none;
     margin-top: 40px;
     padding: 20px;
