@@ -15,7 +15,6 @@ const sendData = () => {
 
     localStorage.setItem('person', name)
 
-
     var stringRegexp = /^[а-яА-ЯёË-]{2,30}$/
     var emailRegexp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i
     var mobileRegexp = /^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/
@@ -36,8 +35,10 @@ const sendData = () => {
                 body: JSON.stringify(user)
             }).then(response => {
 
-                let messageStatus = document.querySelector('#message_status')
+                let messageStatus = document.querySelector('.message_status')
                 messageStatus.innerHTML = "Заявка отправлена"
+                messageStatus.classList.remove("message_status_error")
+                messageStatus.classList.add("message_status_success")
                 messageStatus.style.color = "black"
                 messageStatus.style.display = "block";
 
@@ -51,6 +52,8 @@ const sendData = () => {
         } else {
             let messageStatus = document.querySelector('.message_status')
             messageStatus.innerHTML = "Заявка не отправлена. Проверьте введенные значения"
+            messageStatus.classList.remove("message_status_success")
+            messageStatus.classList.add("message_status_error")
             messageStatus.style.color = "black"
             messageStatus.style.display = "block";
             setTimeout( () => messageStatus.style.display = "none", 5000)
@@ -58,6 +61,34 @@ const sendData = () => {
     console.log(user)
 }
 
+const consSpec = () => {
+    const name = document.querySelector(".pop_up_input_name").value
+    const phone = document.querySelector(".pop_up_input_phone").value
+
+    var user = {
+        name: name,
+        phone: phone,
+    }
+
+    let response = fetch('http://localhost:3000/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+            },
+        body: JSON.stringify(user)
+    })
+
+
+    let popupBg = document.querySelector('.popup'); // Фон попап окна
+    let popup = document.querySelector('.pop_up_body'); // Само окно
+    console.log(popup.classList)
+    popupBg.classList.remove('active'); // Убираем активный класс с фона
+    popup.classList.remove('active'); // И с окна
+    console.log(popup.classList)
+}
+
+const popupButton = document.querySelector('#pop_up_button')
+popupButton.addEventListener('click', consSpec)
+
 const submitButton = document.querySelector('.form__submit')
 submitButton.addEventListener('click', sendData)
-
