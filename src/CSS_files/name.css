@@ -1,0 +1,31 @@
+.marquee-container {
+    display: flex;
+    align-items: center;
+    background: #daddfa;
+    overflow: hidden;
+}
+
+.titleName {
+    font-size: 50px;
+    line-height: 0.1;
+    font-family: sans-serif;
+    padding: 24px 0;
+    margin: 25px 0 25px 0;
+    color: #2d3976;
+    white-space: nowrap;
+    animation: titleName 11s infinite linear;
+}
+
+.titleName:after{
+    content: " Мы работаем!!! покупай! Москва!11! Мы работаем!!! покупай! Москва!11! Мы работаем!!! покупай! Москва!11! Мы работаем!!! покупай! Москва!11!";
+}
+
+@keyframes titleName {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-50%)
+    }
+}
